@@ -594,3 +594,14 @@ AH00558: httpd.exe: Could not reliably determine the server's fully qualified do
 AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::f5b6:432:5086:b68d. Set the 'ServerName' directive globally to suppress this message
 AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::f5b6:432:5086:b68d. Set the 'ServerName' directive globally to suppress this message
 [Thu Jun 11 18:18:14.344313 2026] [mpm_winnt:notice] [pid 4752:tid 200] AH00354: Child: Starting 64 worker threads.
+[Mon Jun 15 23:06:37.516256 2026] [mpm_winnt:notice] [pid 5332:tid 156] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Jun 15 23:06:39.538044 2026] [mpm_winnt:notice] [pid 4752:tid 200] AH00364: Child: All worker threads have exited.
+[Mon Jun 15 23:06:39.566930 2026] [mpm_winnt:notice] [pid 5332:tid 156] AH00430: Parent: Child process 4752 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::5dd3:ee39:3dc3:2fcd. Set the 'ServerName' directive globally to suppress this message
+[Mon Jun 15 23:07:09.543060 2026] [mpm_winnt:notice] [pid 48208:tid 364] AH00455: Apache/2.4.67 (Win64) configured -- resuming normal operations
+[Mon Jun 15 23:07:09.544060 2026] [mpm_winnt:notice] [pid 48208:tid 364] AH00456: Apache Lounge VS18 Server built: Apr 30 2026 10:48:38
+[Mon Jun 15 23:07:09.544060 2026] [core:notice] [pid 48208:tid 364] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Mon Jun 15 23:07:09.546059 2026] [mpm_winnt:notice] [pid 48208:tid 364] AH00418: Parent: Created child process 11468
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::5dd3:ee39:3dc3:2fcd. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::5dd3:ee39:3dc3:2fcd. Set the 'ServerName' directive globally to suppress this message
+[Mon Jun 15 23:07:09.871637 2026] [mpm_winnt:notice] [pid 11468:tid 376] AH00354: Child: Starting 64 worker threads.
