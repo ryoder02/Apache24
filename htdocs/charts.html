@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geothermal Charts</title>
+</head>
+<header class="site-header">
+  <div class="logo">Geothermal Data</div>
+  <nav class="nav-buttons">
+    <a href="home.html" class="nav-btn">Home</a>
+    <a href="config.html" class="nav-btn">Configuration</a>
+    <a href="charts.html" class="nav-btn">Charts</a>
+  </nav>
+</header>
+<div class="container">
+  <body>
+    <h1>Geothermal Readings</h1>
+    <div class="last-reading">Latest: <span id="latest">--</span>°F</div>
+    <div class="chart-container">
+      <canvas id="airChart1"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="waterChart1"></canvas>
+    </div>
+    <script src="./scripts/charts.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "temp_api",
+  "version": "1.0.0",
+  "description": "Geothermal Temperature Project API",
+  "license": "ISC",
+  "author": "slichard",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "middleware": "^1.0.0",
+    "mysql2": "^3.22.3"
+  }
+}

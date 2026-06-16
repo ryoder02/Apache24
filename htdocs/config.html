@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Geothermal Sensor Configuration</title>
+</head>
+<header class="site-header">
+    <div class="logo">Geothermal Data</div>
+    <nav class="nav-buttons">
+        <a href="home.html" class="nav-btn">Home</a>
+        <a href="config.html" class="nav-btn">Configuration</a>
+        <a href="charts.html" class="nav-btn">Charts</a>
+    </nav>
+</header>
+<div class="container">
+    <body>
+        <h2 id="Ard0MAC">--</h2>
+        <label for="arduinoName">Arduino Name:</label>
+        <input type="text" placeholder="8:3a:8d:9c:b3:b4" id="Ard0Name" name="arduinoName">
+        <table style="width:100%">
+            <tr>
+                <td>Port</td>
+                <td>Reading</td>
+                <td>R0</td>
+                <td>T0</td>
+                <td>beta</td>
+                <td>adcmax</td>
+            </tr>
+            <tr>
+                <td>A0</td>
+                <td id="A0Reading">
+                    <select id="Ard0A0Select" name="A0Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </select>
+                </td>
+                <td id="A0R0">
+                    <input type="text" placeholder="10000" id="Ard0A0R0" name="Ard0A0R0">
+                </td>
+                <td id="A0T0">
+                    <input type="text" placeholder="25" id="Ard0A0T0" name="Ard0A0T0">
+                </td>
+                <td id="A0Beta">
+                    <input type="text" placeholder="3892" id="Ard0A0Beta" name="Ard0A0Beta">
+                </td>
+                <td id="A0adcmax">
+                    <input type="text" placeholder="4095" id="Ard0A0adcmax" name="Ard0A0adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A1</td>
+                <td id="A1Reading">
+                    <select id="Ard0A1Select" name="A1Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A1R0">
+                    <input type="text" placeholder="10000" id="Ard0A1R0" name="Ard0A1R0">
+                </td>
+                <td id="A1T0">
+                    <input type="text" placeholder="25" id="Ard0A1T0" name="Ard0A1T0">
+                </td>
+                <td id="A1Beta">
+                    <input type="text" placeholder="3892" id="Ard0A1Beta" name="Ard0A1Beta">
+                </td>
+                <td id="A1adcmax">
+                    <input type="text" placeholder="4095" id="Ard0A1adcmax" name="Ard0A1adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td id="A2Reading">
+                    <select id="Ard0A2Select" name="A2Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A2R0">
+                    <input type="text" placeholder="10000" id="Ard0A2R0" name="Ard0A2R0">
+                </td>
+                <td id="A2T0">
+                    <input type="text" placeholder="25" id="Ard0A2T0" name="Ard0A2T0">
+                </td>
+                <td id="A2Beta">
+                    <input type="text" placeholder="3892" id="Ard0A2Beta" name="Ard0A2Beta">
+                </td>
+                <td id="A2adcmax">
+                    <input type="text" placeholder="4095" id="Ard0A2adcmax" name="Ard0A2adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td id="A3Reading">
+                    <select id="Ard0A3Select" name="A3Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A3R0">
+                    <input type="text" placeholder="10000" id="Ard0A3R0" name="Ard0A3R0">
+                </td>
+                <td id="A3T0">
+                    <input type="text" placeholder="25" id="Ard0A3T0" name="Ard0A3T0">
+                </td>
+                <td id="A3Beta">
+                    <input type="text" placeholder="3892" id="Ard0A3Beta" name="Ard0A3Beta">
+                </td>
+                <td id="A3adcmax">
+                    <input type="text" placeholder="4095" id="Ard0A3adcmax" name="Ard0A3adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td id="A4Reading">
+                    <select id="Ard0A4Select" name="A4Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A4R0">
+                    <input type="text" placeholder="10000" id="Ard0A4R0" name="Ard0A4R0">
+                </td>
+                <td id="A4T0">
+                    <input type="text" placeholder="25" id="Ard0A4T0" name="Ard0A4T0">
+                </td>
+                <td id="A4Beta">
+                    <input type="text" placeholder="3892" id="Ard0A4Beta" name="Ard0A4Beta">
+                </td>
+                <td id="A4adcmax">
+                    <input type="text" placeholder="4095" id="Ard0A4adcmax" name="Ard0A4adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A5</td>
+                <td id="A5Reading">
+                    <select id="Ard0A5Select" name="A5Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A5R0">
+                    <input type="text" placeholder="10000" id="Ard0A5R0" name="Ard0A5R0">
+                </td>
+                <td id="A5T0">
+                    <input type="text" placeholder="25" id="Ard0A5T0" name="Ard0A5T0">
+                </td>
+                <td id="A5Beta">
+                    <input type="text" placeholder="3892" id="Ard0A5Beta" name="Ard0A5Beta">
+                </td>
+                <td id="A5adcmax">
+                    <input type="text" placeholder="4095" id="Ard0A5adcmax" name="Ard0A5adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A6</td>
+                <td id="A6Reading">
+                    <select id="Ard0A6Select" name="A6Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A6R0">
+                    <input type="text" placeholder="10000" id="Ard0A6R0" name="Ard0A6R0">
+                </td>
+                <td id="A6T0">
+                    <input type="text" placeholder="25" id="Ard0A6T0" name="Ard0A6T0">
+                </td>
+                <td id="A6Beta">
+                    <input type="text" placeholder="3892" id="Ard0A6Beta" name="Ard0A6Beta">
+                </td>
+                <td id="A6adcmax">
+                    <input type="text" placeholder="4095" id="Ard0A6adcmax" name="Ard0A6adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A7</td>
+                <td id="A7Reading">
+                    <select id="Ard0A7Select" name="A7Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A7R0">
+                    <input type="text" placeholder="10000" id="Ard0A7R0" name="Ard0A7R0">
+                </td>
+                <td id="A7T0">
+                    <input type="text" placeholder="25" id="Ard0A7T0" name="Ard0A7T0">
+                </td>
+                <td id="A7Beta">
+                    <input type="text" placeholder="3892" id="Ard0A7Beta" name="Ard0A7Beta">
+                </td>
+                <td id="A7adcmax">
+                    <input type="text" placeholder="4095" id="Ard0A7adcmax" name="Ard0A7adcmax">
+                </td>
+            </tr>
+        </table>
+        <button type="button" id="Ard0submit">Submit</button>
+        <h2 id="Ard1MAC">--</h2>
+        <label for="arduinoName">Arduino Name:</label>
+        <input type="text" placeholder="8:3a:8d:9c:b3:b4" id="Ard1Name" name="arduinoName">
+        <table style="width:100%">
+            <tr>
+                <td>Port</td>
+                <td>Reading</td>
+                <td>R0</td>
+                <td>T0</td>
+                <td>beta</td>
+                <td>adcmax</td>
+            </tr>
+            <tr>
+                <td>A0</td>
+                <td id="A0Reading">
+                    <select id="Ard1A0Select" name="A0Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </select>
+                </td>
+                <td id="A0R0">
+                    <input type="text" placeholder="10000" id="Ard1A0R0" name="Ard1A0R0">
+                </td>
+                <td id="A0T0">
+                    <input type="text" placeholder="25" id="Ard1A0T0" name="Ard1A0T0">
+                </td>
+                <td id="A0Beta">
+                    <input type="text" placeholder="3892" id="Ard1A0Beta" name="Ard1A0Beta">
+                </td>
+                <td id="A0adcmax">
+                    <input type="text" placeholder="4095" id="Ard1A0adcmax" name="Ard1A0adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A1</td>
+                <td id="A1Reading">
+                    <select id="Ard1A1Select" name="A1Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A1R0">
+                    <input type="text" placeholder="10000" id="Ard1A1R0" name="Ard1A1R0">
+                </td>
+                <td id="A1T0">
+                    <input type="text" placeholder="25" id="Ard1A1T0" name="Ard1A1T0">
+                </td>
+                <td id="A1Beta">
+                    <input type="text" placeholder="3892" id="Ard1A1Beta" name="Ard1A1Beta">
+                </td>
+                <td id="A1adcmax">
+                    <input type="text" placeholder="4095" id="Ard1A1adcmax" name="Ard1A1adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td id="A2Reading">
+                    <select id="Ard1A2Select" name="A2Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A2R0">
+                    <input type="text" placeholder="10000" id="Ard1A2R0" name="Ard1A2R0">
+                </td>
+                <td id="A2T0">
+                    <input type="text" placeholder="25" id="Ard1A2T0" name="Ard1A2T0">
+                </td>
+                <td id="A2Beta">
+                    <input type="text" placeholder="3892" id="Ard1A2Beta" name="Ard1A2Beta">
+                </td>
+                <td id="A2adcmax">
+                    <input type="text" placeholder="4095" id="Ard1A2adcmax" name="Ard1A2adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td id="A3Reading">
+                    <select id="Ard1A3Select" name="A3Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A3R0">
+                    <input type="text" placeholder="10000" id="Ard1A3R0" name="Ard1A3R0">
+                </td>
+                <td id="A3T0">
+                    <input type="text" placeholder="25" id="Ard1A3T0" name="Ard1A3T0">
+                </td>
+                <td id="A3Beta">
+                    <input type="text" placeholder="3892" id="Ard1A3Beta" name="Ard1A3Beta">
+                </td>
+                <td id="A3adcmax">
+                    <input type="text" placeholder="4095" id="Ard1A3adcmax" name="Ard1A3adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td id="A4Reading">
+                    <select id="Ard1A4Select" name="A4Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A4R0">
+                    <input type="text" placeholder="10000" id="Ard1A4R0" name="Ard1A4R0">
+                </td>
+                <td id="A4T0">
+                    <input type="text" placeholder="25" id="Ard1A4T0" name="Ard1A4T0">
+                </td>
+                <td id="A4Beta">
+                    <input type="text" placeholder="3892" id="Ard1A4Beta" name="Ard1A4Beta">
+                </td>
+                <td id="A4adcmax">
+                    <input type="text" placeholder="4095" id="Ard1A4adcmax" name="Ard1A4adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A5</td>
+                <td id="A5Reading">
+                    <select id="Ard1A5Select" name="A5Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A5R0">
+                    <input type="text" placeholder="10000" id="Ard1A5R0" name="Ard1A5R0">
+                </td>
+                <td id="A5T0">
+                    <input type="text" placeholder="25" id="Ard1A5T0" name="Ard1A5T0">
+                </td>
+                <td id="A5Beta">
+                    <input type="text" placeholder="3892" id="Ard1A5Beta" name="Ard1A5Beta">
+                </td>
+                <td id="A5adcmax">
+                    <input type="text" placeholder="4095" id="Ard1A5adcmax" name="Ard1A5adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A6</td>
+                <td id="A6Reading">
+                    <select id="Ard1A6Select" name="A6Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A6R0">
+                    <input type="text" placeholder="10000" id="Ard1A6R0" name="Ard1A6R0">
+                </td>
+                <td id="A6T0">
+                    <input type="text" placeholder="25" id="Ard1A6T0" name="Ard1A6T0">
+                </td>
+                <td id="A6Beta">
+                    <input type="text" placeholder="3892" id="Ard1A6Beta" name="Ard1A6Beta">
+                </td>
+                <td id="A6adcmax">
+                    <input type="text" placeholder="4095" id="Ard1A6adcmax" name="Ard1A6adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A7</td>
+                <td id="A7Reading">
+                    <select id="Ard1A7Select" name="A7Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A7R0">
+                    <input type="text" placeholder="10000" id="Ard1A7R0" name="Ard1A7R0">
+                </td>
+                <td id="A7T0">
+                    <input type="text" placeholder="25" id="Ard1A7T0" name="Ard1A7T0">
+                </td>
+                <td id="A7Beta">
+                    <input type="text" placeholder="3892" id="Ard1A7Beta" name="Ard1A7Beta">
+                </td>
+                <td id="A7adcmax">
+                    <input type="text" placeholder="4095" id="Ard1A7adcmax" name="Ard1A7adcmax">
+                </td>
+            </tr>
+        </table>
+        <button type="button" id="Ard1submit">Submit</button>
+        <h2 id="Ard2MAC">--</h2>
+        <label for="arduinoName">Arduino Name:</label>
+        <input type="text" placeholder="8:3a:8d:9c:b3:b4" id="Ard2Name" name="arduinoName">
+        <table style="width:100%">
+            <tr>
+                <td>Port</td>
+                <td>Reading</td>
+                <td>R0</td>
+                <td>T0</td>
+                <td>beta</td>
+                <td>adcmax</td>
+            </tr>
+            <tr>
+                <td>A0</td>
+                <td id="A0Reading">
+                    <select id="Ard2A0Select" name="A0Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </select>
+                </td>
+                <td id="A0R0">
+                    <input type="text" placeholder="10000" id="Ard2A0R0" name="Ard2A0R0">
+                </td>
+                <td id="A0T0">
+                    <input type="text" placeholder="25" id="Ard2A0T0" name="Ard2A0T0">
+                </td>
+                <td id="A0Beta">
+                    <input type="text" placeholder="3892" id="Ard2A0Beta" name="Ard2A0Beta">
+                </td>
+                <td id="A0adcmax">
+                    <input type="text" placeholder="4095" id="Ard2A0adcmax" name="Ard2A0adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A1</td>
+                <td id="A1Reading">
+                    <select id="Ard2A1Select" name="A1Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A1R0">
+                    <input type="text" placeholder="10000" id="Ard2A1R0" name="Ard2A1R0">
+                </td>
+                <td id="A1T0">
+                    <input type="text" placeholder="25" id="Ard2A1T0" name="Ard2A1T0">
+                </td>
+                <td id="A1Beta">
+                    <input type="text" placeholder="3892" id="Ard2A1Beta" name="Ard2A1Beta">
+                </td>
+                <td id="A1adcmax">
+                    <input type="text" placeholder="4095" id="Ard2A1adcmax" name="Ard2A1adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td id="A2Reading">
+                    <select id="Ard2A2Select" name="A2Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A2R0">
+                    <input type="text" placeholder="10000" id="Ard2A2R0" name="Ard2A2R0">
+                </td>
+                <td id="A2T0">
+                    <input type="text" placeholder="25" id="Ard2A2T0" name="Ard2A2T0">
+                </td>
+                <td id="A2Beta">
+                    <input type="text" placeholder="3892" id="Ard2A2Beta" name="Ard2A2Beta">
+                </td>
+                <td id="A2adcmax">
+                    <input type="text" placeholder="4095" id="Ard2A2adcmax" name="Ard2A2adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td id="A3Reading">
+                    <select id="Ard2A3Select" name="A3Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A3R0">
+                    <input type="text" placeholder="10000" id="Ard2A3R0" name="Ard2A3R0">
+                </td>
+                <td id="A3T0">
+                    <input type="text" placeholder="25" id="Ard2A3T0" name="Ard2A3T0">
+                </td>
+                <td id="A3Beta">
+                    <input type="text" placeholder="3892" id="Ard2A3Beta" name="Ard2A3Beta">
+                </td>
+                <td id="A3adcmax">
+                    <input type="text" placeholder="4095" id="Ard2A3adcmax" name="Ard2A3adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td id="A4Reading">
+                    <select id="Ard2A4Select" name="A4Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A4R0">
+                    <input type="text" placeholder="10000" id="Ard2A4R0" name="Ard2A4R0">
+                </td>
+                <td id="A4T0">
+                    <input type="text" placeholder="25" id="Ard2A4T0" name="Ard2A4T0">
+                </td>
+                <td id="A4Beta">
+                    <input type="text" placeholder="3892" id="Ard2A4Beta" name="Ard2A4Beta">
+                </td>
+                <td id="A4adcmax">
+                    <input type="text" placeholder="4095" id="Ard2A4adcmax" name="Ard2A4adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A5</td>
+                <td id="A5Reading">
+                    <select id="Ard2A5Select" name="A5Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A5R0">
+                    <input type="text" placeholder="10000" id="Ard2A5R0" name="Ard2A5R0">
+                </td>
+                <td id="A5T0">
+                    <input type="text" placeholder="25" id="Ard2A5T0" name="Ard2A5T0">
+                </td>
+                <td id="A5Beta">
+                    <input type="text" placeholder="3892" id="Ard2A5Beta" name="Ard2A5Beta">
+                </td>
+                <td id="A5adcmax">
+                    <input type="text" placeholder="4095" id="Ard2A5adcmax" name="Ard2A5adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A6</td>
+                <td id="A6Reading">
+                    <select id="Ard2A6Select" name="A6Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A6R0">
+                    <input type="text" placeholder="10000" id="Ard2A6R0" name="Ard2A6R0">
+                </td>
+                <td id="A6T0">
+                    <input type="text" placeholder="25" id="Ard2A6T0" name="Ard2A6T0">
+                </td>
+                <td id="A6Beta">
+                    <input type="text" placeholder="3892" id="Ard2A6Beta" name="Ard2A6Beta">
+                </td>
+                <td id="A6adcmax">
+                    <input type="text" placeholder="4095" id="Ard2A6adcmax" name="Ard2A6adcmax">
+                </td>
+            </tr>
+            <tr>
+                <td>A7</td>
+                <td id="A7Reading">
+                    <select id="Ard2A7Select" name="A7Select">
+                    <option value="inactive">Inactive</option>
+                    <option value="inAir">EAT</option>
+                    <option value="outAir">LAT</option>
+                    <option value="inWater">EWT</option>
+                    <option value="outWater">LWT</option>
+                    <option value="fp1">FP1</option>
+                    <option value="fp2">FP2</option>
+                    <option value="suction">suction</option>
+                    <option value="discharge">discharge</option>
+                </td>
+                <td id="A7R0">
+                    <input type="text" placeholder="10000" id="Ard2A7R0" name="Ard2A7R0">
+                </td>
+                <td id="A7T0">
+                    <input type="text" placeholder="25" id="Ard2A7T0" name="Ard2A7T0">
+                </td>
+                <td id="A7Beta">
+                    <input type="text" placeholder="3892" id="Ard2A7Beta" name="Ard2A7Beta">
+                </td>
+                <td id="A7adcmax">
+                    <input type="text" placeholder="4095" id="Ard2A7adcmax" name="Ard2A7adcmax">
+                </td>
+            </tr>
+        </table>
+        <button type="button" id="Ard2submit">Submit</button>
+        <script type = "module" src="./scripts/config.js"></script>
+    </body>
+</div>
+</html>
